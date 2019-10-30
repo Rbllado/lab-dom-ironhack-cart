@@ -36,6 +36,25 @@ input {
     border-color: #CF000F;
 }
 
+
+.btn-add {
+  color: #000;
+  background-color: #FFF;
+  border-color: red;
+}
+
 .quantity {
   margin: 0 5px;
+}
+
+
+main{
+  margin-top: 50px;
+  margin-bottom: 50px
+  
+}
+.product-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
 }

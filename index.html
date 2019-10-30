@@ -1,14 +1,164 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script type="text/javascript" src="./js/index.js"></script>
   <title>Ironhack cart</title>
 </head>
+
 <body>
+
+  <main>
+
+
+    <div class="product-wrapper" id="item-1">
+
+      <span class="product-name">IronBubble-head</span>
+
+
+      <p>
+        <span>$</span>
+        <span class="unit-cost">25.00</span>
+      </p>
+
+      <div class="quantity-wrapper quantity">
+        <form>
+          <label for="quantity">QTY</label>
+          <input type="number">
+        </form>
+      </div>
+
+      <div class="price-wrapper">
+
+        <span class="total-price">0</span>
+      </div>
+
+      <div class="btn-wrapper">
+        <button class="btn-delete btn" id="delete-1">Delete</button>
+      </div>
+
+    </div>
+
+    <div class="product-wrapper" id="item-2">
+
+        <span class="product-name">IronBubble bike</span>
+  
+  
+        <p>
+          <span>$</span>
+          <span class="unit-cost">120.00</span>
+        </p>
+  
+        <div class="quantity-wrapper quantity">
+          <form>
+            <label for="quantity">QTY</label>
+            <input type="number" name="num">
+          </form>
+        </div>
+  
+        <div class="price-wrapper">
+  
+          <span class="total-price">0</span>
+        </div>
+  
+        <div class="btn-wrapper">
+          <button class="btn-delete btn" id="delete-2">Delete</button>
+        </div>
+  
+      </div>
+
+
+  </main>
+
+  <button class="btn-success btn" id="calc-prices-button">Calculate prices</button>
+  <h3>Total price: <span id="total-of-all">0</span></h3>
+
+
+
+  <script type="text/javascript" src="./js/index.js"></script>
 </body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Ironhack cart</title>
+</head>
+
+<body>
+  <main>
+
+
+    <div class="product-wrapper" id="item-1">
+      <span class="product-name">IronBubble-head</span>
+      <p>
+        <span>$</span>
+        <span class="unit-cost">25.00</span>
+      </p>
+      <div class="quantity quantity-wrapper">
+        <form>
+          <label for="quantity">QTY</label>
+          <input type="number">
+        </form>
+      </div>
+      <div class="price-wrapper">
+        <span class="total-price">0</span>
+      </div>
+      <div class="btn-wrapper">
+        <button class="btn-delete" id="delete-1">Delete</button>
+      </div>
+    </div>
+    <div class="product-wrapper" id="item-2">
+      <span class="product-name">Iron bike</span>
+      <p>
+        <span>$</span>
+        <span class="unit-cost">130.00</span>
+      </p>
+      <div class="quantity quantity-wrapper">
+        <form>
+          <label for="quantity">QTY</label>
+          <input type="number">
+        </form>
+      </div>
+      <div class="price-wrapper">
+        <span class="total-price">0</span>
+      </div>
+      <div class="btn-wrapper">
+        <button class="btn-delete" id="delete-2">Delete</button>
+      </div>
+    </div>
+  </main>
+
+
+
+  <section>
+    <form id="create-new-product"></form>
+    <input type="text" placeholder="New product Name" id="new-item-name">
+    <input type="number" placeholder="New product Name" id="new-item-price">
+    <button class="btn-add btn" id="new-item-create">Add new Product</button>
+  </section>
+  <button class="btn-success" id="calc-prices-button">Calculate Prices</button>
+  <h2>Total Price: <span id="total-of-all">$0</span></h2>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
 </html>
